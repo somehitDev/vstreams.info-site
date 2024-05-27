@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="icon" type="image/jpg" href="https://pbs.twimg.com/profile_images/1789948673360809984/iFRA3AY-_400x400.jpg" />
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+        <!-- fontawesome4.7 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="{{ baseUrl }}assets/css/base.css">
+        <script type="text/javascript">
+            const baseUrl = "{{ baseUrl }}";
+        </script>
+        <script type="text/javascript" src="{{ baseUrl }}assets/js/base.js"></script>
+        {% block header %}{% endblock %}
+    </head>
+    <body>
+        <div class="content flex-column">
+            <!-- navbar -->
+            <div class="flex-row nav-bar">
+                <a class="nav-item" href="{{ baseUrl }}">Shedar</a>
+                <div class="spacer"></div>
+                <a class="nav-item" href="{{ baseUrl }}contact/">Contact</a>
+                <div class="nav-item flex-row">Live<div id="liveIndicator" is-live="false"></div></div>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

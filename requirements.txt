@@ -1,0 +1,4 @@
+aiohttp==3.9.5
+git+https://github.com/billy0402/python-chzzk.git
+jinja2==3.1.4
+aiohttp-jinja2==1.6

@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+
+{% block title %}Shedar.Live::Contact{% endblock %}
+
+{% block header %}
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ baseUrl }}assets/css/contact.css">
+<script type="text/javascript" src="{{ baseUrl }}assets/js/contact.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="flex-column spacer" style="padding:5px;">
+    <div class="mail"><a href="mailto:{{ emailAddress }}?subject={{ emailTitle }}">{{ emailAddress }}</a></div>
+    <div class="spacer">
+        <a href="https://chzzk.naver.com/live/8d062c92902ebf8472aa0146a27bde0e" target="_blank"><div class="showcase" id="sheetMunji">Munji</div></a>
+        <a href="https://chzzk.naver.com/live/10c17232a9585f42fbb567cafdb60a34" target="_blank"><div class="showcase" id="sheetLily">Lily</div></a>
+    </div>
+</div>
+{% endblock %}

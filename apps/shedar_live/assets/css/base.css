@@ -1,0 +1,74 @@
+
+body {
+    width: calc(100vw - 5px);
+    height: calc(100vh - 5px);
+    margin: 0px;
+    padding: 5px;
+    overflow: hidden;
+    user-select: none;
+
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.content {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(white, white), linear-gradient(to bottom, #E4DCDF, #484A6D, #262328);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-row > .spacer, .flex-column > .spacer {
+    flex: 1;
+}
+
+.nav-bar {
+    padding: 5px 10px;
+    /* margin-bottom: 5px; */
+    border-bottom: 1px solid #E4DCDF;
+}
+
+.nav-bar > .nav-item {
+    /* padding: 5px 0px; */
+    text-decoration: none;
+    color: #484A6D;
+}
+
+.nav-bar > .nav-item:not(:last-child) {
+    padding-right: 5px;
+    border-right: 1px solid #E4DCDF;
+}
+
+.nav-bar > .nav-item:not(:first-child) {
+    padding-left: 5px;
+}
+
+#liveIndicator {
+    width: 13px;
+    margin-left: 5px;
+    border: 1px solid #262328;
+    border-radius: 30px;
+}
+
+#liveIndicator[is-live="false"] {
+    background-image: linear-gradient(to bottom, white, red);
+}
+
+#liveIndicator[is-live="true"] {
+    background-image: linear-gradient(to bottom, white, green);
+}

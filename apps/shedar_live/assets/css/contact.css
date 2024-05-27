@@ -1,0 +1,115 @@
+
+.mail {
+    color: #484A6D;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.showcase {
+    width: 300px;
+    height: 100%;
+    float: left;
+    /* cursor: pointer; */
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: transparent;
+    font-size: 80px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    isolation: isolate;
+}
+
+.showcase:not(:last-child) {
+    margin-right: 5px;
+}
+
+.showcase:hover:not(:active) {
+    background-image: none;
+    color: #484A6D;
+    text-shadow: -3px 0 #E4DCDF, 0 3px #E4DCDF, 3px 0 #E4DCDF, 0 -3px #E4DCDF;
+}
+
+.showcase:active {
+    /* position: absolute; */
+    /* width: 100%; */
+    /* height: calc(100% - 75px); */
+    z-index: 99;
+    border: 3px solid #484A6D;
+}
+
+#sheetMunji {
+    background-image: url('https://pbs.twimg.com/media/GH_SjeTagAAko-E?format=jpg&name=large');
+    background-size: 600% 120%;
+    background-position-x: -340px;
+    background-repeat: no-repeat;
+}
+
+#sheetMunji:hover:not(:active) {
+    background-image: none;
+}
+
+#sheetMunji:hover:not(:active)::after {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: calc(100vh - 88px);
+    background-image: url('https://pbs.twimg.com/media/GH_SjeTagAAko-E?format=jpg&name=large');
+    background-size: 600% 120%;
+    background-position-x: -340px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    opacity: 0.4;
+}
+
+/* #sheetMunji:active {
+    width: 1130px;
+    max-width: 100%;
+    height: calc(100% - 6px);
+    background-image: url('https://pbs.twimg.com/media/GHl9d42bEAAFcH6?format=jpg&name=4096x4096');
+    background-size: 100% 100%;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+} */
+
+#sheetLily {
+    background-image: url('https://pbs.twimg.com/media/GLXGoiCaIAAbiYL?format=jpg&name=900x900');
+    background-size: 300% 100%;
+    background-position-x: -165px;
+    background-repeat: no-repeat;
+}
+
+#sheetLily:hover:not(:active) {
+    background-image: none;
+}
+
+#sheetLily:hover:not(:active)::after {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: calc(100vh - 88px);
+    background-image: url('https://pbs.twimg.com/media/GLXGoiCaIAAbiYL?format=jpg&name=900x900');
+    background-size: 300% 100%;
+    background-position-x: -165px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    opacity: 0.4;
+}
+
+/* #sheetLily:active {
+    width: 1130px;
+    height: calc(100% - 6px);
+    max-width: 100%;
+    background-image: url('https://pbs.twimg.com/media/GKF1uA8bYAAtEkU?format=jpg&name=4096x4096');
+    background-size: 100% 100%;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+} */
